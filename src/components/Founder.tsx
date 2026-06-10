@@ -3,7 +3,7 @@ import { founderPhoto } from '../content'
 import { useReveal } from '../hooks/useReveal'
 import { Eyebrow } from './primitives'
 
-const STATS = ['850+ pieces', 'IE / US / CA / RO', '10 ad markets', 'EN / RO native', '3+ yrs']
+const STATS = ['850+ pieces', '20+ markets', '10+ countries', 'EN / RO native', '5+ yrs']
 
 const SKILLS = [
   'On-page SEO',

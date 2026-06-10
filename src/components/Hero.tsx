@@ -14,9 +14,9 @@ interface Stat {
 
 const STATS: Stat[] = [
   { count: 850, suffix: '+', label: 'pieces shipped' },
-  { count: 4, label: 'markets' },
-  { count: 3, suffix: '+', label: 'years' },
-  { count: null, figure: 'EN / RO', label: 'native' },
+  { count: 20, suffix: '+', label: 'markets' },
+  { count: 10, suffix: '+', label: 'countries' },
+  { count: 5, suffix: '+', label: 'years' },
 ]
 
 function StatFigure({ stat }: { stat: Stat }) {
