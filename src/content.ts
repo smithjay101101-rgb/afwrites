@@ -45,10 +45,10 @@ export const PORTFOLIO_MARQUEE: string[] = [
   'VegaDream Casino Review',
   'Legend of Athena — Slot Review',
   'A Big Candy No-Deposit Bonus',
-  'Betano — 50 Rotiri Gratuite',
-  'Cazinouri cu depunere minimă în România',
-  'Metode de plată la cazino',
-  'Cazinouri online străine pentru jucătorii români',
+  'Betano — 50 Free Spins Bonus',
+  'Minimum Deposit Casinos in Romania',
+  'Casino Payment Methods Guide',
+  'International Casinos for Romanian Players',
 ]
 
 export interface Testimonial {
