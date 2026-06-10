@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Ink rounded square -->
+  <rect width="64" height="64" rx="14" fill="#0c0c0e"/>
+  <!-- Hairline gold inset frame -->
+  <rect x="3.5" y="3.5" width="57" height="57" rx="11" fill="none" stroke="#d4af6a" stroke-opacity="0.45" stroke-width="1.5"/>
+  <!-- Gold serif italic monogram -->
+  <text x="33" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" font-size="42" fill="#d4af6a">A</text>
+</svg>
