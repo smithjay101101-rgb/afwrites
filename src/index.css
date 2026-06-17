@@ -83,7 +83,7 @@
     );
   }
 
-  /* Narrow viewports crop the engraving toward the text — fade it further */
+  /* Narrow viewports crop the engraving toward the text, so fade it further */
   @media (max-width: 768px) {
     body::after {
       opacity: 0.16;

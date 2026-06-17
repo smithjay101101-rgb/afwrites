@@ -1,5 +1,4 @@
 import { ArrowUpRight } from 'lucide-react'
-import { PORTFOLIO_URL } from '../content'
 import { useReveal } from '../hooks/useReveal'
 import { useCountUp } from '../hooks/useCountUp'
 import { GhostCta, PrimaryCta } from './primitives'
@@ -50,37 +49,33 @@ export default function Hero() {
       <div ref={ref} className="mx-auto max-w-content">
         <p className="reveal mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
           <span aria-hidden className="h-px w-6 bg-accent/60" />
-          iGaming content studio · EN / RO
+          iGaming writer · EN / RO
         </p>
 
         <h1 className="reveal max-w-[18ch] font-display text-[clamp(2.6rem,7vw,5.25rem)] font-semibold text-text">
           Casino content that{' '}
-          <em className="italic text-accent">ranks</em> in iGaming's hardest
+          <em className="italic text-accent">ranks</em> in iGaming's toughest
           markets.
         </h1>
 
         <p className="reveal mt-7 max-w-[60ch] text-[clamp(1.05rem,1.6vw,1.25rem)] text-muted">
-          AFWrites is a small iGaming content studio. We write reviews, slot
-          pages and bonus guides for operators and affiliates in English markets
-          such as Ireland, the USA and Canada, plus Romania. The person writing
-          your content also plays the games and buys the media, so they know
-          what actually makes a reader click.
+          I'm Adrian. I write casino reviews, slot pages and bonus guides for
+          operators and affiliates across the UK, Ireland, Canada and the US,
+          plus Romania. I've been a casino player myself, so I know how operators
+          and players think. I also spent close to a year buying media on
+          Facebook, so I know what ranks and what makes a player click.
         </p>
 
         <div className="reveal mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-          <PrimaryCta
-            href={PORTFOLIO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the full portfolio
+          <PrimaryCta href="#portfolio">
+            View my portfolio
             <ArrowUpRight
               size={18}
               aria-hidden
               className="transition-transform duration-300 [transition-timing-function:var(--ease-out)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             />
           </PrimaryCta>
-          <GhostCta href="#founder">Meet the founder</GhostCta>
+          <GhostCta href="#about">About me</GhostCta>
         </div>
 
         <dl className="reveal mt-14 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-line pt-10 sm:grid-cols-4 sm:divide-x sm:divide-line sm:gap-x-0">

@@ -1,10 +1,10 @@
 /**
- * Easy-to-edit site content & placeholders.
- * Adrian: update the values below to swap in real links, photo, and quotes.
+ * Easy-to-edit site content & links.
+ * Adrian: update the values below to swap in real links and photo.
  */
-import founderImg from './assets/founder.jpeg'
+import profileImg from './assets/profile.jpeg'
 
-// Google Drive portfolio link.
+// Full Google Drive portfolio folder ("Browse some samples" button).
 export const PORTFOLIO_URL =
   'https://drive.google.com/drive/folders/1BxProCABA3CYBfqVjXpRacMad8VBTP29'
 
@@ -17,62 +17,46 @@ export const CONTACT_PHONE_DISPLAY = '+40 731 291 898'
 export const LOCATION = 'Bucharest, Romania'
 
 /**
- * Founder photo. To change it, replace src/assets/founder.jpeg (keep the name),
+ * Profile photo. To change it, replace src/assets/profile.jpeg (keep the name),
  * or update the import at the top of this file. Set to null to show the
- * "Add photo" placeholder box instead.
+ * placeholder box instead.
  */
-export const founderPhoto: string | null = founderImg
+export const profilePhoto: string | null = profileImg
+
+export type PieceLang = 'en' | 'ro'
 
 export interface PortfolioPiece {
   title: string
   market: string
   type: string
+  lang: PieceLang
+  /**
+   * Individual Drive PDF link for THIS piece. Opens in a new tab.
+   * TODO (Adrian): paste each article's own Drive link here. Until then these
+   * fall back to the full folder so nothing 404s.
+   */
+  pdfUrl: string
 }
 
-/** Featured pieces shown as specimen cards in the Portfolio section. */
+/**
+ * Every portfolio piece. The Portfolio section filters this list by `lang`
+ * for the English / Romanian tabs.
+ */
 export const PORTFOLIO_PIECES: PortfolioPiece[] = [
-  { title: 'SpinMills Casino Review', market: 'Canada', type: 'Casino review' },
-  { title: 'CosmoBet Casino Review', market: 'UK & Ireland', type: 'Casino review' },
-  { title: 'Moonspin Casino Mini Review', market: 'USA', type: 'Casino review' },
-  { title: 'Lista cazinouri online România 2026', market: 'Romania', type: 'Toplist guide' },
-  { title: 'Mental — Slot Review', market: 'Global', type: 'Slot review' },
-  { title: 'Velvet Spin No-Deposit Bonus', market: 'USA', type: 'Bonus guide' },
-]
-
-/** Remaining piece titles, shown as the low-opacity marquee behind the wall. */
-export const PORTFOLIO_MARQUEE: string[] = [
-  'Gangsta Casino Review',
-  'VegaDream Casino Review',
-  'Legend of Athena — Slot Review',
-  'A Big Candy No-Deposit Bonus',
-  'Betano — 50 Free Spins Bonus',
-  'Minimum Deposit Casinos in Romania',
-  'Casino Payment Methods Guide',
-  'International Casinos for Romanian Players',
-]
-
-export interface Testimonial {
-  quote: string
-  attribution: string
-  /** Optional substring of `quote` rendered in italic gold when featured. */
-  highlight?: string
-}
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    quote:
-      'AFWrites rewrote our Canadian casino reviews and three of them hit page one within two months. Drafts came back clean, with nothing to cut, no AI fingerprints, and the wagering math was actually correct.',
-    attribution: 'Content Lead, Gangsta Casino (Canada)',
-    highlight: 'three of them hit page one within two months',
-  },
-  {
-    quote:
-      "First writer we've worked with who genuinely understands KYC flows and bonus terms. Our briefs used to come back full of factual errors we'd have to fix. Now they come back publish-ready.",
-    attribution: 'SEO Manager, SpinMills Casino (Canada)',
-  },
-  {
-    quote:
-      "20+ tested, on-brand reviews a month, delivered on schedule. We've renewed three times, and that consistency alone is worth it. Getting both English and Romanian from one writer kept our multi-market rollout ahead of plan.",
-    attribution: 'Editor, CosmoBet Casino (UK & Ireland)',
-  },
+  // English
+  { title: 'Gangsta Casino Review', market: 'Canada', type: 'Casino review', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  { title: 'SpinMills Casino Review', market: 'Canada', type: 'Casino review', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  { title: 'CosmoBet Casino Review', market: 'UK & Ireland', type: 'Casino review', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  { title: 'VegaDream Casino Review', market: 'UK & Ireland', type: 'Casino review', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  { title: 'Moonspin Casino Mini Review', market: 'US', type: 'Casino review', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  { title: 'Mental Slot Review', market: 'Global', type: 'Slot review', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  { title: 'Legend of Athena Slot Review', market: 'Global', type: 'Slot review', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  { title: 'Velvet Spin No-Deposit Bonus', market: 'US', type: 'Bonus guide', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  { title: 'A Big Candy No-Deposit Bonus', market: 'US', type: 'Bonus guide', lang: 'en', pdfUrl: PORTFOLIO_URL },
+  // Romanian
+  { title: 'Lista cazinouri online România 2026', market: 'Romania', type: 'Toplist guide', lang: 'ro', pdfUrl: PORTFOLIO_URL },
+  { title: 'Cazinouri cu depunere minimă', market: 'Romania', type: 'Toplist guide', lang: 'ro', pdfUrl: PORTFOLIO_URL },
+  { title: 'Betano: 50 Rotiri Gratuite', market: 'Romania', type: 'Bonus guide', lang: 'ro', pdfUrl: PORTFOLIO_URL },
+  { title: 'Metode de plată la cazino', market: 'Romania', type: 'Payment guide', lang: 'ro', pdfUrl: PORTFOLIO_URL },
+  { title: 'Cazinouri online străine pentru jucătorii români', market: 'Romania', type: 'Toplist guide', lang: 'ro', pdfUrl: PORTFOLIO_URL },
 ]

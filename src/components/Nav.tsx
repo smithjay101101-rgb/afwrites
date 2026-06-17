@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const LINKS = [
-  { href: '#what-we-do', label: 'What we do' },
+  { href: '#about', label: 'About' },
   { href: '#portfolio', label: 'Portfolio' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#founder', label: 'Founder' },
+  { href: '#what-i-write', label: 'What I write' },
+  { href: '#contact', label: 'Contact' },
 ]
 
 const SECTION_IDS = LINKS.map((l) => l.href.slice(1))
@@ -64,9 +64,12 @@ export default function Nav() {
       >
         <a
           href="#top"
-          className="font-display text-xl font-semibold tracking-tightish text-text"
+          className="group inline-flex items-center gap-2.5 font-display text-xl font-semibold tracking-tightish text-text"
         >
-          AFWrites
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-accent/40 font-display text-sm italic text-accent">
+            AF
+          </span>
+          Adrian Florea
         </a>
 
         {/* Desktop links */}
