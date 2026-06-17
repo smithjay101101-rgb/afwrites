@@ -12,6 +12,8 @@ export const PORTFOLIO_URL =
 export const CONTACT_EMAIL = 'adrian.florea@afwrites.com'
 export const CONTACT_PHONE = '+40731291898' // tel: format (no spaces)
 export const CONTACT_PHONE_DISPLAY = '+40 731 291 898'
+export const LINKEDIN_URL =
+  'https://www.linkedin.com/in/adrian-florea-667811223'
 
 // Location.
 export const LOCATION = 'Bucharest, Romania'
