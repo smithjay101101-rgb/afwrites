@@ -68,7 +68,7 @@ export default function Portfolio() {
             <SpotlightCard
               key={piece.title}
               as="a"
-              href={piece.pdfUrl}
+              href={piece.pdf}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col p-6"
