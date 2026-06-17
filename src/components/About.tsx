@@ -28,7 +28,7 @@ export default function About() {
   const ref = useReveal<HTMLDivElement>(50)
 
   return (
-    <section id="about" className="px-5 py-[clamp(4rem,9vw,8rem)] sm:px-8">
+    <section id="about" className="px-5 py-[clamp(4rem,6vw,5rem)] sm:px-8">
       <div
         ref={ref}
         className="mx-auto grid max-w-content items-start gap-10 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:gap-14"

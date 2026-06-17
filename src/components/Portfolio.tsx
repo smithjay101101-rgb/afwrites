@@ -20,7 +20,7 @@ export default function Portfolio() {
   const pieces = PORTFOLIO_PIECES.filter((p) => p.lang === lang)
 
   return (
-    <section id="portfolio" className="px-5 py-[clamp(4rem,9vw,8rem)] sm:px-8">
+    <section id="portfolio" className="px-5 py-[clamp(4rem,6vw,5rem)] sm:px-8">
       <div ref={ref} className="mx-auto max-w-content">
         <Eyebrow>The work</Eyebrow>
         <h2 className="reveal max-w-[22ch] font-display text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-accent">

@@ -14,7 +14,7 @@ export default function WhatIWrite() {
   const ref = useReveal<HTMLDivElement>(60)
 
   return (
-    <section id="what-i-write" className="px-5 py-[clamp(4rem,9vw,8rem)] sm:px-8">
+    <section id="what-i-write" className="px-5 py-[clamp(4rem,6vw,5rem)] sm:px-8">
       <div ref={ref} className="mx-auto max-w-content">
         <Eyebrow>What I write</Eyebrow>
         <h2 className="reveal max-w-[20ch] font-display text-[clamp(2rem,4.5vw,3.5rem)] font-semibold text-text">

@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative px-5 pb-[clamp(4rem,8vw,7rem)] pt-[clamp(7rem,14vw,11rem)] sm:px-8"
+      className="relative px-5 pb-[clamp(4rem,6vw,5rem)] pt-[clamp(7rem,14vw,11rem)] sm:px-8"
     >
       <div ref={ref} className="mx-auto max-w-content">
         <p className="reveal mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-accent">

@@ -40,7 +40,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="px-5 py-[clamp(4rem,9vw,8rem)] sm:px-8">
+    <section id="contact" className="px-5 py-[clamp(4rem,6vw,5rem)] sm:px-8">
       <div ref={ref} className="mx-auto max-w-content">
         <div className="reveal relative overflow-hidden rounded-3xl border border-accent/15 bg-surface px-6 py-[clamp(3rem,6vw,5rem)] before:pointer-events-none before:absolute before:inset-x-0 before:-top-32 before:h-64 before:bg-[radial-gradient(50%_100%_at_50%_0%,rgba(212,175,106,0.12),transparent)] sm:px-12">
           <div className="relative grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-14">
