@@ -1,7 +1,8 @@
+import { Check } from 'lucide-react'
 import { useReveal } from '../hooks/useReveal'
 import { Eyebrow } from './primitives'
 
-const CHIPS = [
+const ITEMS = [
   'Casino reviews',
   'Slot and game pages',
   'Bonus and no-deposit guides',
@@ -27,13 +28,16 @@ export default function WhatIWrite() {
           vertical on your budget.
         </p>
 
-        <ul className="reveal mt-10 flex flex-wrap gap-2.5">
-          {CHIPS.map((chip) => (
+        <ul className="reveal mt-10 grid gap-x-10 gap-y-px sm:grid-cols-2">
+          {ITEMS.map((item) => (
             <li
-              key={chip}
-              className="rounded-full border border-line bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors duration-300 [transition-timing-function:var(--ease-out)] hover:border-accent/40 hover:text-text"
+              key={item}
+              className="group flex items-center gap-3 border-b border-line py-4 text-[clamp(1rem,1.6vw,1.2rem)] font-medium text-text"
             >
-              {chip}
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-accent/25 bg-accent/[0.08] text-accent transition-colors duration-300 [transition-timing-function:var(--ease-out)] group-hover:border-accent/50 group-hover:bg-accent/15">
+                <Check size={13} strokeWidth={2.5} aria-hidden />
+              </span>
+              {item}
             </li>
           ))}
         </ul>
