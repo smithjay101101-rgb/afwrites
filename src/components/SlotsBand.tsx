@@ -66,11 +66,6 @@ export default function SlotsBand() {
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-ink/30"
         />
-        {/* Caption sits in the image's negative space, bottom-right */}
-        <p className="absolute bottom-0 right-0 max-w-[24ch] p-6 text-right font-display text-[clamp(1.25rem,2.4vw,1.9rem)] font-semibold leading-tight text-text sm:p-9">
-          Written by people who actually{' '}
-          <em className="italic text-accent">play the games</em>.
-        </p>
       </div>
     </section>
   )
