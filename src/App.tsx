@@ -1,6 +1,5 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import SlotsBand from './components/SlotsBand'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import WhatIWrite from './components/WhatIWrite'
@@ -19,7 +18,6 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <SlotsBand />
         <About />
         <Portfolio />
         <WhatIWrite />
